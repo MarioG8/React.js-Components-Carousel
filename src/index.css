@@ -121,23 +121,23 @@ p {
 
 /* section */
 .section {
-  width: 90vw;
+  /* width: 90vw;
   margin: 5rem auto;
-  max-width: var(--max-width);
-  /* background: url('/src/images/img-home.jpg') center center/cover no-repeat;
+  max-width: var(--max-width); */
+  background: url('./images/giammarco.jpg') center center/cover no-repeat;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  object-fit: contain; */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  object-fit: contain;
 }
 
 @media screen and (min-width: 992px) {
   .section {
-    width: 95vw;
+    width: 100vw;
   }
 }
 /*
@@ -166,17 +166,17 @@ Slider
   margin-top: 4rem;
   width: 100vw;
   /* have to have a height */
-  height: 450px;
-  max-width: 800px;
+  height: 768px;
+  max-width: 1260px;
   text-align: center;
   position: relative;
   display: flex;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .person-img {
   margin-bottom: 1rem;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   object-fit: cover;
   border: 4px solid var(--clr-grey-8);
   box-shadow: var(--dark-shadow);
@@ -247,10 +247,10 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  /* opacity: 0; */
-  transition: var(--transition);
+  opacity: 0;
+  transition: all 1200ms ease-in-out;
 }
-/* article.activeSlide {
+article.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
@@ -259,4 +259,4 @@ article.lastSlide {
 }
 article.nextSlide {
   transform: translateX(100%);
-} */
+}
