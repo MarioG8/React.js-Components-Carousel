@@ -1,9 +1,12 @@
-import './App.css';
-import { CarouselData } from './components/CarouselData';
-import CarouselSlider from './components/CarouselSlider';
+import React from 'react';
+import Slider from './components/Slider';
 
-function App() {
-  return <CarouselSlider slides={CarouselData} />;
-}
+const App = () => {
+  return (
+    <>
+      <Slider />
+    </>
+  );
+};
 
 export default App;
